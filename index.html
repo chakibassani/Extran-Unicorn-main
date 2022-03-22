@@ -8,6 +8,7 @@
   <meta name="description" content="devoir">
   <title>Extra-Unicorn-main></title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="desktop.css">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
       <li><a href="#" title="request">request</a> </li>
     </ul>
     <!-- menu burger (mobile) -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list menu-burger"
       viewBox="0 0 16 16">
       <path fill-rule="evenodd"
         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
@@ -37,15 +38,15 @@
   </nav>
 
   <!-- en-téte du site -->
-  <header>
+  <header class="container">
     <h1>let's create the look and feel for your future unicorn
       <p> with an idea and clarity throughout digital communication</p>
       <img src="images/unicorn.png" alt="unicorn">
   </header>
-  <main>
-    <section>
+  <main class="container">
+    <section class="card-project">
       <picture>
-        <source srcset="images/projects/project_1.png" media="min-width: 1200px)">
+        <source srcset="images/projects/project_1.png" media="(min-width: 1200px)">
         <img src="images/projects/project_mobile_1.jpg" alt="image mobile">
       </picture>
       <!-- partie princiaple -->
@@ -58,7 +59,7 @@
       <picture>
         <!-- ranger les images du plus grand au plus petit-->
         <!-- la derniére image appellée dans la liste, est celle par defaut -->
-        <source srcset="images/projects/project_3.png" media="min-width: 1200px)">
+        <source srcset="images/projects/project_3.png" media="(min-width: 1200px)">
         <img src="images/projects/project_mobile_3.jpg" alt="unicorn-news-papier">
         <!-- loading="lazy" permet un changement différé de l'image -->
       </picture>
@@ -75,7 +76,7 @@
       <img src="images/unicorn-news-paper.svg" alt="unicorn newsletter">
 
       <div>
-        <h3>sound good,hit us up</h3>
+        <h3>sound good? hit us up</h3>
         <a href="#" title="send request" class="btn-dark">
           send request
         </a>
